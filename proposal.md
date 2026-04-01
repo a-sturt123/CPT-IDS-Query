@@ -1,13 +1,13 @@
 # Project Proposal
 
 ## 1. Project Identification
-- **Project Title:**
-- **Course:**
-- **Term:**
-- **Student Name(s):**
-- **Primary Contact:**
-- **Proposed Start Date:**
-- **Proposed End Date:**
+- Project Title: CPT IDS Query
+- Course: Process Automation and Shell Script
+- Term: Spring 2026
+- Student Name(s): Ayden Sturtevant, Darian Mongiovi
+- Primary Contact: Discord
+- Proposed Start Date: Pending Project Approval
+- Proposed End Date: TBD
 
 ---
 
@@ -22,14 +22,13 @@ Include:
 ---
 
 ## 3. Problem Statement
-Clearly describe the problem, need, or opportunity this project addresses.
 
-Answer:
-- What problem exists?
-- Who is affected?
-- Why does this problem matter?
+As of right now, students within the CPT program currently have no way to view or analyze the traffic within the CPT environment. While tools like Wireshark
+or IDS systems can capture this data, they are not ideal for user friendliness or everyday use.
 
-Limit to 1–2 focused paragraphs.
+Additionally, students have no way of understanding network usage patterns such as peak traffic times, which can impact performance when they are trying to
+complete a lab or use a platform like Cengage. Without this type of information, it makes it hard for students to work around high traffic periods which can potentially lead to slower performance and a less efficient workflow. This also limits opportunities for cybersecurity students to perform basic SOC-style analysis on real or structured network data.
+
 
 ---
 
@@ -44,14 +43,13 @@ Include:
 ---
 
 ## 5. Technical Stack & Tools
-List the technologies you expect to use.  Please note that this solution MUST live within the cpt.internal network and must be maintainable by future students.
 
-- **Operating System(s):**
-- **Programming Language(s):**
-- **Frameworks / Libraries:**
-- **Databases / Storage:**
-- **Infrastructure (VMs, containers, etc.):**
-- **Tools (Git, CI, monitoring, APIs, etc.):**
+- Operating System(s): CPT Internal Linux Machine
+- Programming Language(s): Python, SQL
+- Frameworks / Libraries: pandas, requests, scapy (or something similar), SQLAlchemy, Discord.py
+- Databases / Storage: PostgreSQL (primary). SQLite (for testing)
+- Infrastructure (VMs, containers, etc.): CPT Internal VM environment
+- Tools (Git, CI, monitoring, APIs, etc.): Git, VS Code, Discord API
 
 ---
 
@@ -69,12 +67,23 @@ Be honest—this section helps scope the project appropriately.
 ---
 
 ## 7. Project Scope & Deliverables
-Define what success looks like.
 
-Include:
-- Minimum viable deliverable (MVP)
-- Required outputs (application, scripts, documentation, etc.)
-- Optional stretch goals (if time permits)
+Minimum Viable Product (MVP):
+- Collect or use network traffic data from the CPT environment
+- Clean and structure the data using Python
+- Store the data in a database
+- Discord bot that allows users to query traffic data
+
+Required Deliverables:
+- Python scripts for data collection and processing
+- Working Discord bot with query commands
+- Database schema and population logic
+- Basic documentation for setup and usage
+
+Optional Stretch Goals:
+- Visualization of traffic patterns (graphs or charts)
+- More advanced query filters (time ranges, protocols)
+- Near real time data updates
 
 ---
 
@@ -92,13 +101,22 @@ Dates do not need to be exact, but planning is required.
 ---
 
 ## 9. Risks, Constraints & Dependencies
-Identify potential challenges.
 
-Include:
-- Technical risks
-- Time constraints
-- External dependencies (APIs, credentials, access)
-- Mitigation strategies
+Technical Risks:
+- Limited access to real network traffic data
+- Difficulty capturing or filtering traffic accurately
+
+Time Constraints:
+- Limited timeframe to design, build, and test the system
+
+Dependencies:
+- Access to CPT internal network or sample traffic data
+- Database credentials and permissions
+- Discord bot token and server access
+
+Mitigation Strategies:
+- Use sample or logged data if live capture is restricted
+- Start with simple queries and expand if time allows
 
 ---
 
@@ -115,11 +133,14 @@ A brief assessment of all of these is required, even if it is "N/A".
 ---
 
 ## 11. Team Structure (If Applicable)
-If working in a group, describe:
-- Team roles
-- Communication plan
-- Conflict resolution approach
-- Workload distribution
+
+- Roles are very equal, we both hold responsibility for working on code and making suggestions on overall structure
+
+- Currently we are using discord to communicate about initial structures. A github repository will be set up to handle code revisions
+
+- Simple voting to resolve any ambiguity issues. Goals are very cleared and structured. We will stick to a set of packages and tools to avoid technical conflicts
+
+- The project can be parsed out into different functions needed so members can focus on strong suits weather it be sql, python, or web apis
 
 ---
 
@@ -134,14 +155,11 @@ Include:
 ---
 
 ## 13. Faculty/cpt.internal Resources Requested
-List any required resources:
-- VM access
-- Network access
-- Credentials or APIs
-- Special permissions
-- Hardware (if applicable)
 
-Please be sure to consider any future tickets you may need to submit to complete this work as those will need to be generated and assigned to the appropriate groups as soon as feasibly possible once the project kicks off to ensure timely delivery.  I will step in to help where required but you will likely be working with students in other classes so please be cognizant of their time!
+- Access to CPT internal VM environment
+- PostgreSQL database credentials
+- Discord bot token and server access
+- Permission to access or use network traffic data (if required)
 
 ---
 
@@ -153,7 +171,7 @@ By submitting this proposal, I acknowledge that:
 
 **Signature (Name & Date):**
 
-Student 1:  ____________________________ Date: _______________
+Student 1:  __Ayden Sturtevant__________________________ Date: _____4-1-26__________
 Student 2:  ____________________________ Date: _______________
 Student 3:  ____________________________ Date: _______________
 Student 4:  ____________________________ Date: _______________
