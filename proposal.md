@@ -54,15 +54,8 @@ Include:
 ---
 
 ## 6. Prerequisite Knowledge & Skills
-Assess your readiness for this project.
 
-Include:
-- Skills you already have
-- Skills you need to learn
-- Relevant coursework completed
-- Prior projects or experience
-
-Be honest—this section helps scope the project appropriately.
+I have experience with Python, SQL, SQLAlchemy, Discord bots, Linux, and Git from prior coursework and personal projects. My Network Security, Cybersecurity, and Server Administration classes have also given me a solid background for the network side of this project. The main thing I need to pick up is Scapy, which I plan to tackle early on. -Ayden
 
 ---
 
