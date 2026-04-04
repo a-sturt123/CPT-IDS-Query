@@ -83,15 +83,11 @@ Optional Stretch Goals:
 ---
 
 ## 8. Milestones & Timeline
-Provide a rough timeline broken into phases.
 
-Example:
-- Phase 1: Research & Design
-- Phase 2: Core Implementation
-- Phase 3: Testing & Refinement
-- Phase 4: Documentation & Presentation
-
-Dates do not need to be exact, but planning is required.
+- Phase 1: Deploy Tshark and begin collecting/cleaning data.
+- Phase 2: Design SQL database and population scripts
+- Phase 3: Test Discord bot and basic queries.
+- Phase 4: Deploy bot with full scope of query options.
 
 ---
 
@@ -117,13 +113,12 @@ Mitigation Strategies:
 
 ## 10. Security, Ethics & Safety Considerations
 Address any relevant concerns, such as:
-- Authentication and authorization
-- Data sensitivity
-- Network exposure
-- Logging, monitoring, or automation impact
-- Ethical considerations
+- Authentication: We need scope of available data.
+- Data sensitivity: We need to ensure that traffic data in no way compromises security.
+- Network exposure: We are proposing a network scanner for inbound traffic, to ensure only public data is used.
+- Automation: Ensure automation isnt compromised (SQL injection considerations)
+- Ethical considerations: Privacy
 
-A brief assessment of all of these is required, even if it is "N/A".
 
 ---
 
