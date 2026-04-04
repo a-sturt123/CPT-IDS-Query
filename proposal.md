@@ -12,12 +12,12 @@
 ---
 
 ## 2. Project Selection & Motivation
-Describe why you selected this project and why you are a good fit.
+The motivation for this project revolves around bringing the concepts we've learned with automation, APIs, and database management together for a user application.
+We are proposing a Discord bot that will help users interact with a database of network traffic, providing insight for CPT/security students to become familiar with network traffic logs.
 
-Include:
-- Personal or professional motivation
-- Alignment with career goals
-- Relevant interests or prior exposure
+As computer tech students we feel this is a great project for showcasing what we've learned while potentially providing a unique service for future students.
+
+Professionally this is a project that will show our team's ability to remain agile and manage complex programming tasks.
 
 ---
 
@@ -33,12 +33,12 @@ complete a lab or use a platform like Cengage. Without this type of information,
 ---
 
 ## 4. Proposed Solution Overview
-Provide a high-level description of your proposed solution.
+We are proposing a virtual environment where and instance of wire shark can run, and databases are populated with specific traffic relevant to intrusion detection.
+Tools such as Tshark and PostgreSQL will collect traffic data and populate an SQL database accordingly. Rules will have to be made to filter large ammounts of data, and queries will have to be desinged to give users a veriaty of options to pull data.
 
 Include:
-- What you intend to build, deploy, or configure
-- Core features or capabilities
-- Explicit exclusions (what the project will *not* include)
+- We intend to build and data collection pipeline, and a discord bot that allows students to pull data as needed.
+- Network traffic data collection, Data cleaning, Database Population.
 
 ---
 
@@ -56,6 +56,8 @@ Include:
 ## 6. Prerequisite Knowledge & Skills
 
 I have experience with Python, SQL, SQLAlchemy, Discord bots, Linux, and Git from prior coursework and personal projects. My Network Security, Cybersecurity, and Server Administration classes have also given me a solid background for the network side of this project. The main thing I need to pick up is Scapy, which I plan to tackle early on. -Ayden
+
+Networking is my main focus as a student. I have insights into network traffic and what to look for when it comes to malicious traffic, and intrusion detection. I also have a lot of practice using python and sql as a student. -Darian
 
 ---
 
