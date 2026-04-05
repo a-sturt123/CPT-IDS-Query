@@ -113,9 +113,9 @@ Mitigation Strategies:
 
 ## 10. Security, Ethics & Safety Considerations
 Address any relevant concerns, such as:
-- Authentication: We need scope of available data.
+- Authentication: This project is inteneded to store inbound traffic data as to no be intrusive to the internal cpt network.
 - Data sensitivity: We need to ensure that traffic data in no way compromises security.
-- Network exposure: We are proposing a network scanner for inbound traffic, to ensure only public data is used.
+- Network exposure: We are proposing a network scanner for inbound traffic, to ensure only publically accesible data is used.
 - Automation: Ensure automation isnt compromised (SQL injection considerations)
 - Ethical considerations: Privacy
 
@@ -135,12 +135,12 @@ Address any relevant concerns, such as:
 ---
 
 ## 12. Documentation & Knowledge Transfer Plan
-Explain how this project will be documented.  Please note that this should include documentation in the UVDesk knowledgebase at the very least.  Programming projects should include readme.md files. 
+The README will detail the functions of .py files, the SQL schemas, and the directory tree.
+A deployment duide will outline the 
 
-Include:
-- README or user documentation
-- Deployment or maintenance guides
-- How another student or administrator could continue the project
+Included:
+- README
+- Deployment guide will include cron job details, and scripts for automation.
 
 ---
 
@@ -149,7 +149,7 @@ Include:
 - Access to CPT internal VM environment
 - PostgreSQL database credentials
 - Discord bot token and server access
-- Permission to access or use network traffic data (if required)
+- Permission to access or use network traffic data
 
 ---
 
@@ -162,7 +162,7 @@ By submitting this proposal, I acknowledge that:
 **Signature (Name & Date):**
 
 Student 1:  __Ayden Sturtevant__________________________ Date: _____4-1-26__________
-Student 2:  ____________________________ Date: _______________
+Student 2:  __Darian Mongiovi________ Date: _____4-4-26______________
 Student 3:  ____________________________ Date: _______________
 Student 4:  ____________________________ Date: _______________
 
