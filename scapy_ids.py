@@ -5,11 +5,9 @@ from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from scapy.all import sniff, IP, TCP
 
-# 1. Load your .env file
 load_dotenv()
 
-# 2. Database Connection setup
-# Using the single string from your .env file
+#Database Connection setup
 DB_URI = os.getenv('DATABASE_URL')
 
 if not DB_URI:
@@ -26,8 +24,6 @@ except Exception as e:
     print(f"[ERROR] Database connection failed: {e}")
     exit(1)
 
-# 3. Settings
-# Reduced BATCH_SIZE to 1 for immediate testing feedback
 BATCH_SIZE = 1 
 packet_buffer = []
 
@@ -50,7 +46,6 @@ def process_packet(packet):
         
         packet_buffer.append(event)
 
-        # 4. Batch Logic
         if len(packet_buffer) >= BATCH_SIZE:
             try:
                 # Convert to DataFrame and push to SQL
@@ -63,12 +58,12 @@ def process_packet(packet):
             except Exception as e:
                 print(f"[ERROR] Could not write to Database: {e}")
 
-# 5. BPF Filter String
-# Simplified: Watches specific ports regardless of destination IP
+# BPF Filter String
+# Watches specific ports regardless of destination IP
 bpf_filter = "tcp and (port 22 or 23 or 80 or 445)"
 
 def main():
-    print("--- PROPRIETARY IDS: LIVE TESTING MODE ---")
+    print("CPT IDS: LIVE TESTING MODE")
     print("Listening on Interface: Loopback (lo)")
     print("Filtering for Ports: 22 (SSH), 23 (Telnet), 80 (HTTP), 445 (SMB)")
     print("Waiting for traffic... (Press Ctrl+C to stop)")
