@@ -1,0 +1,6 @@
+discord.py
+sqlalchemy
+pandas
+python-dotenv
+scapy
+psycopg2-binary
