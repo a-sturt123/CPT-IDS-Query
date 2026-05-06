@@ -113,3 +113,10 @@ The bot will load each cog and confirm the database connection on startup
 - Source IPs are masked in all bot output and CSV exports to avoid exposing internal addresses
 - SQLite is used for local testing. Switching to PostgreSQL requires updating `DATABASE_URL` in `.env` and updating `strftime` calls in `cogs/time.py` to use PostgreSQL's `EXTRACT` syntax
 - The bot will start without a database connection and return a friendly error on any query command until one is available
+
+---
+
+## Collaborators
+
+- Ayden Sturtevant
+- Darian Mongiovi
